@@ -6,7 +6,14 @@ Train classical ML models (Logistic Regression, KNN, GaussianNB) on an animals i
 Install:
 ```bash
 pip install -r requirements.txt
+```
 
+Train the model:
+```bash
 python training/train_model.py --data_dir data/Animals-10 --img_size 64 64
+```
 
+Start the FastAPI server:
+```bash
 uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+```
